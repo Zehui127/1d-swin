@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="swin1d",
-    version="0.01",
+    version="0.2",
     packages=find_packages(),
     install_requires=[
         "torch",
@@ -21,3 +21,5 @@ setup(
         "Operating System :: OS Independent",
     ],
 )
+# delete conda env
+# conda env remove -n swin1d
