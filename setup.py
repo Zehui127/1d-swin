@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="swin-1d",
+    name="swin1d",
     version="0.01",
     packages=find_packages(),
     install_requires=[
