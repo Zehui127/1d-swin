@@ -4,7 +4,9 @@ The implementation of 1d-swin, an efficient transformer for capturing hierarchic
 # Install
 
   ```bash
-  pip install git+https://github.com/Zehui127/1d-swin
+  pip clone https://github.com/Zehui127/1d-swin
+  cd 1d-swin
+  pip install -e .
   ```
 
 # Demo
