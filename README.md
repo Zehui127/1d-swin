@@ -18,9 +18,10 @@ from examples import (
 
 
 def test_genomic_model(seq_length=512):
-    # The input is a random DNA sequence generator, which generates a random
-    # DNA sequence with length of seq_length. The output is a tensor with shape
-    # of (batch_size, seq_length//block_num, hidden_size*block_num).
+    """The input is a random DNA sequence generator, which generates a random
+    DNA sequence with length of seq_length. The output is a tensor with shape
+    of (batch_size, seq_length//block_num, hidden_size*block_num)."""
+
     input = generate_random_dna(seq_length)
     encode_input = onehot_encoder(input)
     model = swin1d_block(4)
@@ -30,9 +31,10 @@ def test_genomic_model(seq_length=512):
 
 
 def test_language_model(seq_length=512):
-    # The input is a random text generator, which generates a random text with
-    # length of seq_length. The output is a tensor with shape of
-    # (batch_size, seq_length//block_num, input_token_size*block_num).
+    """The input is a random text generator, which generates a random text with
+    length of seq_length. The output is a tensor with shape of
+    (batch_size, seq_length//block_num, input_token_size*block_num)."""
+
     input = random_text_generator(2, seq_length, tokenized=True)
     model = swin1d_block(1)
     output = model(input)
