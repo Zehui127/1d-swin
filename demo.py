@@ -15,8 +15,8 @@ def test_genomic_model(seq_length=512):
     return output
 
 
-def test_language_model():
-    input = random_text_generator(2, 512, tokenized=True)
+def test_language_model(seq_length=512):
+    input = random_text_generator(2, seq_length, tokenized=True)
     model = swin1d_block(1)
     output = model(input)
     print(output.shape)
