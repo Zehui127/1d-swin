@@ -1,10 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="1d-swin",
+    name="swin-1d",
     version="0.01",
     packages=find_packages(),
-    package_data={"hg": ["datasets/dataset_info.yaml"]},
     install_requires=[
         "torch",
         "einops",
