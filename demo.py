@@ -1,5 +1,5 @@
-from module import swin_1d_block
-from examples import (
+from swin1d.module import swin_1d_block
+from swin1d.examples import (
     random_text_generator,
     generate_random_dna,
     onehot_encoder,
@@ -56,4 +56,4 @@ def swin1d_block(dim):
 
 
 if __name__ == "__main__":
-    test_language_model()
+    test_genomic_model()
